@@ -1,3 +1,4 @@
+# encoding: utf-8
 def application(environ, start_response):
     method = environ['REQUEST_METHOD']
     path = environ['PATH_INFO']
