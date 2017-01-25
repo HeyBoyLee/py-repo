@@ -1,0 +1,7 @@
+# mongodb monitor cron 
+* * * * * root (cd /home/mi/repo/mongomon/bin && python  mongodb_monitor.py  > /dev/null)
+
+
+*/1 * * * * source /home/mi/.zshrc && python /home/mi/repo/mongomon/bin/mongodb_monitor.py >> /home/mi/repo/mongomon/bin/log 2>&1
+
+*/1 * * * * source /home/mi/.zshrc && python /home/mi/repo/redismon/bin/redis_monitor.py >> /home/mi/repo/redismon/bin/log 2>&1

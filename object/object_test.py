@@ -26,7 +26,8 @@ class C(A):
     super(C, self).stop()
     print "stop C stop"
 
-class D(B, C):
+# class D(B, C):
+class D(B, A):
   def go(self):
     super(D, self).go()
     print "go D go"
@@ -59,8 +60,8 @@ d.go()
 # a.stop()
 # b.stop()
 # c.stop()
-d.stop()
-# e.stop()
+# d.stop()
+e.stop()
 #
 # a.pause()
 # b.pause()
