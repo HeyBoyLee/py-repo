@@ -17,6 +17,7 @@ wifi_coll = conn['metok_core']['wifi_position']
 
 redis_client = Redis(host='127.0.0.1', port=6379, db=0)
 
+
 def cur_file_dir():
   path = sys.path[0]
   if os.path.isdir(path):
